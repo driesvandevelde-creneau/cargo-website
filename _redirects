@@ -1,0 +1,12 @@
+# Old WordPress addresses -> new pages (301 = permanent, keeps Google ranking)
+/group-bookings-events    /groups/   301
+/group-bookings-events/   /groups/   301
+/index.php                /          301
+/home                     /          301
+/home/                    /          301
+
+# Old one-page links like cargo-dubai.com/#promotions are handled on the home page
+# (#promotions -> /whats-on/, #menu -> /menus/, #contact -> /visit/).
+
+# Not-found pages fall back to the home page
+/*    /    404
