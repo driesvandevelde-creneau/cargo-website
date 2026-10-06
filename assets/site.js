@@ -142,6 +142,7 @@
     formStatus.textContent='Sending your enquiry…';
     fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()})
       .then(function(r){ if(!r.ok) throw new Error('status '+r.status);
+        try{ if(window.fbq) fbq('track','Lead',{content_name:v('pkg')}); }catch(err){}
         var first=v('name').split(' ')[0]; form.reset();
         formStatus.textContent='Thanks '+first+', your enquiry is with the Cargo team. We\'ll come back to you with availability and a package shortly.';
       })
