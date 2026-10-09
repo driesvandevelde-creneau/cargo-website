@@ -8,5 +8,14 @@
 # Old one-page links like cargo-dubai.com/#promotions are handled on the home page
 # (#promotions -> /whats-on/, #menu -> /menus/, #contact -> /visit/).
 
+# Old WordPress menu PDFs -> new menu files
+/wp-content/uploads/2026/06/20260415_CARGO_FOODMENU.pdf     /menus/pdf/cargo-dubai-food-menu.pdf                301
+/wp-content/uploads/2024/04/20231211_CARGO_FOODMENU.pdf     /menus/pdf/cargo-dubai-food-menu.pdf                301
+/wp-content/uploads/2025/11/20251104_CARGO_DRINKSMENU.pdf   /menus/pdf/cargo-dubai-drinks-menu.pdf              301
+/wp-content/uploads/2025/11/20251030_CARGO_BRUNCH.pdf       /menus/pdf/cargo-dubai-brunch-menu.pdf              301
+/wp-content/uploads/2025/11/20251030_CARGO_BRUNCH_VEG.pdf   /menus/pdf/cargo-dubai-vegetarian-brunch-menu.pdf   301
+/wp-content/uploads/2024/10/Cargo_NYE_Menu.pdf              /festive/#nye-menu                                  301
+/wp-content/uploads/*                                       /menus/                                             301
+
 # Not-found pages fall back to the home page
 /*    /    404
